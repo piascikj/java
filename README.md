@@ -2,6 +2,8 @@
 
 Installs or reconfigures java.
 
+[![Build Status](https://travis-ci.org/jpuppet/java.png?branch=master)](https://travis-ci.org/jpuppet/java)
+
 ## License
 
 Apache 2.0 License (http://www.apache.org/licenses/LICENSE-2.0)
