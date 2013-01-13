@@ -1,7 +1,5 @@
 # jpuppet-java
 
-## Description
-
 Installs or reconfigures java.
 
 ## License
@@ -19,6 +17,7 @@ Apache 2.0 License (http://www.apache.org/licenses/LICENSE-2.0)
     javadoc        => true,
     set_as_default => false,
     export_path    => false,
+    vendor         => "oracle",
   }
 ```
 
@@ -35,4 +34,6 @@ Apache 2.0 License (http://www.apache.org/licenses/LICENSE-2.0)
 * set_as_default
     - ensures that the java version is set as default when typing "java"
 * export_path
-    - ensures the export of the JAVA_HOME variable
+    - ensures the export of the JAVA_HOME variable and the adjustment of the PATH variable
+* vendor
+    - determines which JVM to install ("openjdk", "oracle", "gnu", "ibm")

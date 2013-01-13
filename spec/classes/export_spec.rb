@@ -1,4 +1,4 @@
-require 'spec_helper'
+require "spec_helper"
  
-describe 'export', :type => 'class' do
+describe "java::export", :type => :class do
 end

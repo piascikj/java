@@ -1,11 +1,11 @@
-require 'spec_helper'
+require "spec_helper"
  
-describe 'java', :type => 'class' do
+describe "java::init", :type => :class do
     
     context "On an Ubuntu OS" do
         let :facts do
             {
-                :osfamily => 'Ubuntu'
+                :osfamily => "Ubuntu"
             }
         end
          

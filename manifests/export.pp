@@ -1,6 +1,6 @@
 # http://docs.puppetlabs.com/references/latest/type.html
 
-class export(
+class java::export(
     $export_path    = true,
     $set_as_default = true
 ) {
