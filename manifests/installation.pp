@@ -13,7 +13,7 @@ class java::installation(
     
     class oracle {
         
-        case $java::installation::version {
+        case $version {
             "1.6": { $package_name = "oracle-java6-installer" }
             "1.7": { $package_name = "oracle-java7-installer" }
         }
@@ -29,28 +29,28 @@ class java::installation(
     class openjdk {
         
         if $install_jdk {
-            case $java::installation::version {
+            case $version {
                 "1.6": { package { "openjdk-6-jdk": } }
                 "1.7": { package { "openjdk-7-jdk": } }
             }
         }
         
         if $install_jre {
-            case $java::installation::version {
+            case $version {
                 "1.6": { package { "openjdk-6-jre": } }
                 "1.7": { package { "openjdk-7-jre": } }
             }
         }
         
         if $install_sources {
-            case $java::installation::version {
+            case $version {
                 "1.6": { package { "openjdk-6-source": } }
                 "1.7": { package { "openjdk-7-source": } }
             }
         }
         
         if $install_javadoc {
-            case $java::installation::version {
+            case $version {
                 "1.6": { package { "openjdk-6-doc": } }
                 "1.7": { package { "openjdk-7-doc": } }
             }
@@ -66,7 +66,7 @@ class java::installation(
     }
     
     if $::operatingsystem == "ubuntu" {
-        class { $java::installation::vendor: }
+        class { $vendor: }
     }
     
 }
