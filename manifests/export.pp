@@ -9,73 +9,114 @@ class java::export(
     $install_jre    = true,
 ) {
     
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/jre/bin/ControlPanel to provide /usr/bin/ControlPanel (ControlPanel) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/jre/bin/java to provide /usr/bin/java (java) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/jre/bin/java_vm to provide /usr/bin/java_vm (java_vm) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/jre/bin/javaws to provide /usr/bin/javaws (javaws) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/jre/bin/jcontrol to provide /usr/bin/jcontrol (jcontrol) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/jre/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/jre/bin/orbd to provide /usr/bin/orbd (orbd) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/jre/bin/pack200 to provide /usr/bin/pack200 (pack200) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/jre/bin/policytool to provide /usr/bin/policytool (policytool) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/jre/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/jre/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/jre/bin/servertool to provide /usr/bin/servertool (servertool) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/jre/bin/tnameserv to provide /usr/bin/tnameserv (tnameserv) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/jre/bin/unpack200 to provide /usr/bin/unpack200 (unpack200) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/jre/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/appletviewer to provide /usr/bin/appletviewer (appletviewer) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/apt to provide /usr/bin/apt (apt) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/extcheck to provide /usr/bin/extcheck (extcheck) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/idlj to provide /usr/bin/idlj (idlj) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/jar to provide /usr/bin/jar (jar) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/jarsigner to provide /usr/bin/jarsigner (jarsigner) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/javac to provide /usr/bin/javac (javac) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/javadoc to provide /usr/bin/javadoc (javadoc) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/javah to provide /usr/bin/javah (javah) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/javap to provide /usr/bin/javap (javap) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/jconsole to provide /usr/bin/jconsole (jconsole) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/jdb to provide /usr/bin/jdb (jdb) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/jhat to provide /usr/bin/jhat (jhat) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/jinfo to provide /usr/bin/jinfo (jinfo) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/jmap to provide /usr/bin/jmap (jmap) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/jps to provide /usr/bin/jps (jps) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/jrunscript to provide /usr/bin/jrunscript (jrunscript) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/jsadebugd to provide /usr/bin/jsadebugd (jsadebugd) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/jstack to provide /usr/bin/jstack (jstack) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/jstat to provide /usr/bin/jstat (jstat) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/jstatd to provide /usr/bin/jstatd (jstatd) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/jvisualvm to provide /usr/bin/jvisualvm (jvisualvm) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/native2ascii to provide /usr/bin/native2ascii (native2ascii) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/rmic to provide /usr/bin/rmic (rmic) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/schemagen to provide /usr/bin/schemagen (schemagen) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/serialver to provide /usr/bin/serialver (serialver) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/wsgen to provide /usr/bin/wsgen (wsgen) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/wsimport to provide /usr/bin/wsimport (wsimport) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/bin/xjc to provide /usr/bin/xjc (xjc) in auto mode.
-    # update-alternatives: using /usr/lib/jvm/java-6-oracle/jre/lib/amd64/libnpjp2.so to provide /usr/lib/mozilla/plugins/libnpjp2.so (libnpjp2.so) in auto mode.
-    
-    class oracle {
+    $java_version = java::export::version? {
+        "1.6": "6",
+        "1.7": "7",
     }
     
-    class openjdk {
+    class oracle {
         
         if $install_jdk {
-            file_line{ "jdk_etc_environment_java_home":
-                path => "/etc/environment",
-                line => "JAVA_HOME=/usr/lib/jvm/java-6-openjdk-${::architecture}/",
-            }
-            file_line{ "jdk_etc_environment_jre_home":
-                path => "/etc/environment",
-                line => "JRE_HOME=/usr/lib/jvm/java-6-openjdk-${::architecture}/jre/",
+            if $export_path {
+                file_line{ "jdk_etc_environment_java_home":
+                    path => "/etc/environment",
+                    line => "JAVA_HOME=/usr/lib/jvm/java-${java_version}-oracle/",
+                } -> file_line{ "jdk_etc_environment_jre_home":
+                    path => "/etc/environment",
+                    line => "JRE_HOME= /usr/lib/jvm/java-${java_version}-oracle/jre/",
+                }
             }
         }
         
         if $install_jre {
-            file_line{ "jre_etc_environment_jre_home":
-                path => "/etc/environment",
-                line => "JRE_HOME=/usr/lib/jvm/java-6-openjdk-${::architecture}/jre/",
+            if $export_path {
+                file_line{ "jre_etc_environment_jre_home":
+                    path => "/etc/environment",
+                    line => "JRE_HOME= /usr/lib/jvm/java-${java_version}-oracle/jre/",
+                }
             }
+        }
+        
+    }
+    
+    class openjdk {
+        
+        class openjdk_set_defaults {
+            
+            if $set_as_default {
+                # http://packages.ubuntu.com/precise/amd64/openjdk-6-jdk/filelist
+                # http://packages.ubuntu.com/precise/amd64/openjdk-6-jre/filelist
+                # http://packages.ubuntu.com/precise/amd64/openjdk-6-jre-headless/filelist
+                # http://packages.ubuntu.com/precise/amd64/icedtea-6-plugin/filelist
+                
+                exec { "appletviewer": user => root, command => "update-alternatives --set appletviewer /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/appletviewer", } ->
+                exec { "apt":          user => root, command => "update-alternatives --set apt          /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/apt", } ->
+                exec { "extcheck":     user => root, command => "update-alternatives --set extcheck     /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/extcheck", } ->
+                exec { "idlj":         user => root, command => "update-alternatives --set idlj         /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/idlj, } ->
+                exec { "jar":          user => root, command => "update-alternatives --set jar          /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/jar, } ->
+                exec { "jarsigner":    user => root, command => "update-alternatives --set jarsigner    /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/jarsigner, } ->
+                exec { "javac":        user => root, command => "update-alternatives --set javac        /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/javac, } ->
+                exec { "javadoc":      user => root, command => "update-alternatives --set javadoc      /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/javadoc, } ->
+                exec { "javah":        user => root, command => "update-alternatives --set javah        /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/javah, } ->
+                exec { "javap":        user => root, command => "update-alternatives --set javap        /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/javap, } ->
+                exec { "jconsole":     user => root, command => "update-alternatives --set jconsole     /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/jconsole, } ->
+                exec { "jdb":          user => root, command => "update-alternatives --set jdb          /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/jdb, } ->
+                exec { "jhat":         user => root, command => "update-alternatives --set jhat         /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/jhat, } ->
+                exec { "jinfo":        user => root, command => "update-alternatives --set jinfo        /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/jinfo, } ->
+                exec { "jmap":         user => root, command => "update-alternatives --set jmap         /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/jmap, } ->
+                exec { "jps":          user => root, command => "update-alternatives --set jps          /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/jps, } ->
+                exec { "jrunscript":   user => root, command => "update-alternatives --set jrunscript   /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/jrunscript, } ->
+                exec { "jsadebugd":    user => root, command => "update-alternatives --set jsadebugd    /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/jsadebugd, } ->
+                exec { "jstack":       user => root, command => "update-alternatives --set jstack       /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/jstack, } ->
+                exec { "jstat":        user => root, command => "update-alternatives --set jstat        /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/jstat, } ->
+                exec { "jstatd":       user => root, command => "update-alternatives --set jstatd       /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/jstatd, } ->
+                exec { "native2ascii": user => root, command => "update-alternatives --set native2ascii /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/native2ascii, } ->
+                exec { "rmid":         user => root, command => "update-alternatives --set rmid         /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/rmid, } ->
+                exec { "schemagen":    user => root, command => "update-alternatives --set schemagen    /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/schemagen, } ->
+                exec { "serialver":    user => root, command => "update-alternatives --set serialver    /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/serialver, } ->
+                exec { "wsgen":        user => root, command => "update-alternatives --set wsgen        /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/wsgen, } ->
+                exec { "wsimport":     user => root, command => "update-alternatives --set wsimport     /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/wsimport, } ->
+                exec { "xjc":          user => root, command => "update-alternatives --set xjc          /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/xjc, } ->
+                exec { "policytool":   user => root, command => "update-alternatives --set policytool   /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/policytool, } ->
+                exec { "java":         user => root, command => "update-alternatives --set java         /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/jre/bin/java, } ->
+                exec { "keytool":      user => root, command => "update-alternatives --set keytool      /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/jre/bin/keytool, } ->
+                exec { "orbd":         user => root, command => "update-alternatives --set orbd         /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/jre/bin/orbd, } ->
+                exec { "pack200":      user => root, command => "update-alternatives --set pack200      /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/jre/bin/pack200, } ->
+                exec { "rmiregistry":  user => root, command => "update-alternatives --set rmiregistry  /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/jre/bin/rmiregistry, } ->
+                exec { "servertool":   user => root, command => "update-alternatives --set servertool   /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/jre/bin/servertool, } ->
+                exec { "tnameserv":    user => root, command => "update-alternatives --set tnameserv    /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/jre/bin/tnameserv, } ->
+                exec { "unpack200":    user => root, command => "update-alternatives --set unpack200    /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/jre/bin/unpack200, } ->
+                exec { "javaws":       user => root, command => "update-alternatives --set javaws       /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/jre/bin/javaws, } ->
+                exec { "jexec":        user => root, command => "update-alternatives --set jexec        /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/jre/lib/jexec, } ->
+                exec { "rmic":         user => root, command => "update-alternatives --set rmic         /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/bin/rmic, } ->
+                exec { "libnpjp2":     user => root, command => "update-alternatives --set libnpjp2.so  /usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/jre/lib/${::architecture}/IcedTeaPlugin.so", }
+            }
+            
+        }
+        
+        if $install_jdk {
+            if $export_path {
+                file_line{ "jdk_etc_environment_java_home":
+                    path => "/etc/environment",
+                    line => "JAVA_HOME=/usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/",
+                } -> file_line{ "jdk_etc_environment_jre_home":
+                    path => "/etc/environment",
+                    line => "JRE_HOME=/usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/jre/",
+                }
+            }
+            
+            class { "openjdk_set_defaults": }
+        }
+        
+        if $install_jre {
+            if $export_path {
+                file_line{ "jre_etc_environment_jre_home":
+                    path => "/etc/environment",
+                    line => "JRE_HOME=/usr/lib/jvm/java-${java_version}-openjdk-${::architecture}/jre/",
+                }
+            }
+            
+            class { "openjdk_set_defaults": }
         }
         
     }
