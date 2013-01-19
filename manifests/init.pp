@@ -8,7 +8,7 @@ class java::init (
     $javadoc        = true,
     $vendor         = "openjdk",
     $export_path    = true,
-    $set_as_default = true
+    $set_as_default = true,
 ) {
     
     class { "requirements":
@@ -28,6 +28,10 @@ class java::init (
     class { "export":
         export_path     => $export_path,
         set_as_default  => $set_as_default,
+        vendor          => $vendor,
+        version         => $version,
+        install_jdk     => $jdk,
+        install_jre     => $jre,
     }
     
 }

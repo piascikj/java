@@ -1,6 +1,6 @@
 require "spec_helper"
  
-describe "requirements", :type => :class do
+describe "java::requirements", :type => :class do
     
     context "to old Version" do
         @version = "1.5"
