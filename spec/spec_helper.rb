@@ -13,9 +13,9 @@ RSpec.configure do |c|
   c.manifest = '../manifests/init.pp'
   c.manifest_dir = File.join(File.dirname(__FILE__), '..', 'manifests')
   
-  c.before :each do
-    Facter::Util::Loader.any_instance.stubs(:load_all)
-    Facter.clear
-    Facter.clear_messages
-  end
+  #c.before :each do
+  #  Facter::Util::Loader.any_instance.stubs(:load_all)
+  #  Facter.clear
+  #  Facter.clear_messages
+  #end
 end
