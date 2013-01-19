@@ -8,16 +8,12 @@ class java::requirements(
     $supportedVendors = [ "openjdk", "oracle", "gnu", "ibm" ]
     $supportedVersions = [ "1.6", "1.7" ]
     
-    if !$supportedVersions.include?($version) {
+    if !$supportedVersions.include?($java::requirements::version) {
         fail("only Java Versions 1.6 and 1.7 are supported")
     }
     
-    if !$supportedVendors.include?($vendor) {
+    if !$supportedVendors.include?($java::requirements::vendor) {
         fail("only the following vendors are supported: ${supportedVendors}")
-    }
-    
-    if $version == "1.7" and $vendor == "sun" {
-        fail("No Java 1.7 from sun")
     }
     
     case $::operatingsystem {
@@ -27,7 +23,6 @@ class java::requirements(
         centos:  { fail("not yet implemented") }
         redhat:  { fail("not yet implemented") }
         debian:  { fail("not yet implemented") }
-        ubuntu:  {}
         default: { fail("Unrecognized operating system") }
         
     }

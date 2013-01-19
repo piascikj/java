@@ -12,7 +12,7 @@ class java::repositories(
         
         ubuntu: {
             
-            case $vendor {
+            case $java::repositories::vendor {
                 
                 "ibm":     {
                 }
@@ -22,7 +22,7 @@ class java::repositories(
                 
                 "oracle":  {
                     package { "python-software-properties": } ->
-                    exec    { "oracle_installer":            command => "add-apt-repository ${oracle_ppa_repository}", } ->
+                    exec    { "oracle_installer":            command => "add-apt-repository ${java::repositories::oracle_ppa_repository}", } ->
                     exec    { "oracle_installer_apt_update": command => "apt-get update", }
                 }
                 

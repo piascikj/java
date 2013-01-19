@@ -12,26 +12,26 @@ class java::init (
 ) {
     
     class { "requirements":
-        version         => $version,
-        vendor          => $vendor,
+        version         => $java::init::version,
+        vendor          => $java::init::vendor,
     } ->
     class { "repositories":
-        vendor          => $vendor,
+        vendor          => $java::init::vendor,
     } ->
     class { "installation":
-        version         => $version,
-        install_jdk     => $jdk,
-        install_jre     => $jre,
-        install_sources => $sources,
-        install_javadoc => $javadoc,
+        version         => $java::init::version,
+        install_jdk     => $java::init::jdk,
+        install_jre     => $java::init::jre,
+        install_sources => $java::init::sources,
+        install_javadoc => $java::init::javadoc,
     } ->
     class { "export":
-        export_path     => $export_path,
-        set_as_default  => $set_as_default,
-        vendor          => $vendor,
-        version         => $version,
-        install_jdk     => $jdk,
-        install_jre     => $jre,
+        export_path     => $java::init::export_path,
+        set_as_default  => $java::init::set_as_default,
+        vendor          => $java::init::vendor,
+        version         => $java::init::version,
+        install_jdk     => $java::init::jdk,
+        install_jre     => $java::init::jre,
     }
     
 }
