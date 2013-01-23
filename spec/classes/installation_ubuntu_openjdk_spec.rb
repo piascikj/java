@@ -2,9 +2,9 @@ require "spec_helper"
 
 describe "java::installation", :type => :class do
     
-    context "Ubuntu" do
+    context "Debian-Family" do
         
-        let(:facts)  { { :operatingsystem => "Ubuntu", :kernel => "Linux", } }
+        let(:facts)  { { :osfamily => "Debian", :kernel => "Linux", } }
         
         context "OpenJDK 1.6, jdk, jre, sources, javadoc" do
             let(:params) { { :vendor => "openjdk", :version => "1.6", :install_jdk => true, :install_jre => true, :install_sources => true, :install_javadoc => true, } }

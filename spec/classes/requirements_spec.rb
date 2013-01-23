@@ -46,5 +46,40 @@ describe "java::requirements", :type => :class do
         @vendor = "IBM"
         it { expect{}.to_not raise_error }
     end
+    
+    context "Debian Family" do
+        let(:facts)  { { :osfamily => "Debian", } }
+        it { expect{}.to_not raise_error }
+    end
+    
+    context "RedHat Family" do
+        let(:facts)  { { :osfamily => "RedHat", } }
+        it { expect raise_error }
+    end
+    
+    context "Suse Family" do
+        let(:facts)  { { :osfamily => "Suse", } }
+        it { expect raise_error }
+    end
+    
+    context "Solaris Family" do
+        let(:facts)  { { :osfamily => "Solaris", } }
+        it { expect raise_error }
+    end
+    
+    context "Gentoo Family" do
+        let(:facts)  { { :osfamily => "Gentoo", } }
+        it { expect raise_error }
+    end
+    
+    context "Archlinux Family" do
+        let(:facts)  { { :osfamily => "Archlinux", } }
+        it { expect raise_error }
+    end
+    
+    context "Mandrake Family" do
+        let(:facts)  { { :osfamily => "Mandrake", } }
+        it { expect raise_error }
+    end
 
 end

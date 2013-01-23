@@ -1,6 +1,6 @@
 # http://docs.puppetlabs.com/references/latest/type.html
 
-class java::installation(
+class java::installation (
     $version         = "1.7",
     $vendor          = "openjdk",
     $install_jdk     = true,
@@ -12,6 +12,8 @@ class java::installation(
     Package { ensure => latest }
     
     class oracle {
+        
+        Exec { path => [ "/bin", "/usr/bin" ] }
         
         case $java::installation::version {
             "1.6": { $package_name = "oracle-java6-installer" }
@@ -65,7 +67,7 @@ class java::installation(
     class ibm {
     }
     
-    if $::operatingsystem == "ubuntu" {
+    if $::osfamily == "Debian" {
         class { $java::installation::vendor: }
     }
     

@@ -12,9 +12,10 @@ Vagrant::Config.run do |config|
         
         java_config.vm.provision :puppet do |puppet|
             
+            puppet.module_path    = [ "modules", "spec/fixtures/modules" ]
             puppet.manifests_path = "manifests"
-            puppet.manifest_file  = "init.pp"
-            puppet.options        = [ "--verbose", ]
+            puppet.manifest_file  = "vagrant.pp"
+            puppet.options        = [ "-v", ]
             
         end
         
