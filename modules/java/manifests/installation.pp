@@ -60,13 +60,6 @@ class java::installation (
         
     }
     
-    class gnu {
-        # gcj
-    }
-    
-    class ibm {
-    }
-    
     if $::osfamily == "Debian" {
         class { $java::installation::vendor: }
     }

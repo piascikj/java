@@ -145,12 +145,6 @@ class java::export(
         
     }
     
-    class gnu {
-    }
-    
-    class ibm {
-    }
-    
     if $::osfamily == "Debian" {
         class { $java::export::vendor: }
     }

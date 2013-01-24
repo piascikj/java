@@ -20,14 +20,6 @@ describe "java::repositories", :type => :class do
             }
         end
         
-        context "GNU" do
-            let(:params) { { :vendor => "gnu", } }
-        end
-        
-        context "IBM" do
-            let(:params) { { :vendor => "ibm", } }
-        end
-        
     end
 
 end

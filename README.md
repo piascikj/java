@@ -38,5 +38,5 @@ Apache 2.0 License (http://www.apache.org/licenses/LICENSE-2.0)
 * export_path
     - ensures the export of the JAVA_HOME and JRE_HOME variable
 * vendor
-    - determines which JVM to install ("openjdk", "oracle", "gnu", "ibm")
+    - determines which JVM to install ("openjdk", "oracle")
     - Note that you automatically agree to [oracles license](http://www.oracle.com/technetwork/java/javase/terms/license/index.html) if you choose oracle as vandor

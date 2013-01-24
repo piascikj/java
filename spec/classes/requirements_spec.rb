@@ -37,16 +37,6 @@ describe "java::requirements", :type => :class do
         it { expect{}.to_not raise_error }
     end
     
-    context "vendor GNU" do
-        @vendor = "GNU"
-        it { expect{}.to_not raise_error }
-    end
-    
-    context "vendor IBM" do
-        @vendor = "IBM"
-        it { expect{}.to_not raise_error }
-    end
-    
     context "Debian Family" do
         let(:facts)  { { :osfamily => "Debian", } }
         it { expect{}.to_not raise_error }

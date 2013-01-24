@@ -14,8 +14,6 @@ class java::requirements (
     case $java::requirements::vendor {
         "openjdk": { }
         "oracle":  { }
-        "ibm":     { }
-        "gnu":     { }
         default:   { fail("only the following vendors are supported: openjdk, oracle, gnu, ibm") }
     }
     

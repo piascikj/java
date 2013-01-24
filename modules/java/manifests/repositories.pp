@@ -14,12 +14,6 @@ class java::repositories (
             
             case $java::repositories::vendor {
                 
-                "ibm":     {
-                }
-                
-                "gnu":     {
-                }
-                
                 "oracle":  {
                     exec    { "general_apt_update": command => "apt-get update", } ->
                     package { "python-software-properties": } ->
