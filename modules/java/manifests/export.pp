@@ -23,7 +23,7 @@ class java::export(
                     line => "JAVA_HOME=/usr/lib/jvm/java-${java::export::java_version}-oracle/",
                 } -> file_line{ "jdk_etc_environment_jre_home":
                     path => "/etc/environment",
-                    line => "JRE_HOME= /usr/lib/jvm/java-${java::export::java_version}-oracle/jre/",
+                    line => "JRE_HOME=/usr/lib/jvm/java-${java::export::java_version}-oracle/jre/",
                 }
             }
         }
@@ -32,7 +32,7 @@ class java::export(
             if $java::export::export_path {
                 file_line{ "jre_etc_environment_jre_home":
                     path => "/etc/environment",
-                    line => "JRE_HOME= /usr/lib/jvm/java-${java::export::java_version}-oracle/jre/",
+                    line => "JRE_HOME=/usr/lib/jvm/java-${java::export::java_version}-oracle/jre/",
                 }
             }
         }
