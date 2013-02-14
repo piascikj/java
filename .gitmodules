@@ -1,0 +1,3 @@
+[submodule "manifests/stdlib"]
+	path = manifests/stdlib
+	url = git@github.com:puppetlabs/puppetlabs-stdlib.git

@@ -12,7 +12,7 @@ Vagrant::Config.run do |config|
         cfg.vm.box_url   = "http://files.vagrantup.com/precise64.box"
         cfg.vm.provision :puppet do |puppet|
             
-            puppet.module_path    = [ "modules", "spec/fixtures/modules" ]
+            puppet.module_path    = [ "manifests", "modules", "spec/fixtures/modules" ]
             puppet.manifests_path = "manifests"
             puppet.manifest_file  = "vagrant.pp"
             puppet.options        = [ "-v", ]
@@ -27,7 +27,7 @@ Vagrant::Config.run do |config|
         cfg.vm.box_url   = "http://dl.dropbox.com/u/937870/VMs/squeeze64.box"
         cfg.vm.provision :puppet do |puppet|
             
-            puppet.module_path    = [ "modules", "spec/fixtures/modules" ]
+            puppet.module_path    = [ "manifests", "modules", "spec/fixtures/modules" ]
             puppet.manifests_path = "manifests"
             puppet.manifest_file  = "vagrant.pp"
             puppet.options        = [ "-v", ]

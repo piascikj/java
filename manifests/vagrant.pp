@@ -1,5 +1,25 @@
 Package { ensure => latest, }
 
-package { "apt-packages": name => [ "git", "ruby", "ruby-dev", "rubygems1.8", ], }->
-package { "gem-packages": name => [ "rake", "puppetlabs_spec_helper", "puppet", ], provider => gem, }->
-class   { "java":         vendor => "oracle", }
+package { "apt-packages":
+    name     => [ "git", "ruby", "ruby-dev", "rubygems1.8", ],
+}
+
+package { "rake":
+    provider => gem,
+    require  => Package["apt-packages"],
+}
+
+package { "puppetlabs_spec_helper":
+    provider => gem,
+    require  => Package["apt-packages"],
+}
+
+package { "puppet":
+    provider => gem,
+    require  => Package["apt-packages"],
+}
+
+class { "java":
+    vendor   => "oracle",
+    require  => Package["apt-packages"],
+}
