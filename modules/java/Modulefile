@@ -1,5 +1,5 @@
 name 'jpuppet-java'
-version '1.0.0'
+version '1.0.1'
 source 'https://github.com/jpuppet/java.git'
 author 'jpuppet'
 license 'Apache 2.0'
